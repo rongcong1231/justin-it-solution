@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - JUSTIN IT SOLUTION</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; color:#222; }
+    header { background:#0b1c2d; color:#fff; padding:20px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; font-size:20px; }
+    nav a { color:#fff; margin-left:15px; text-decoration:none; font-size:14px; }
+    .lang-btn { border:1px solid #fff; background:transparent; color:#fff; margin-left:10px; cursor:pointer; }
+
+    .section { padding:60px 20px; max-width:900px; margin:auto; line-height:1.6; }
+    h2 { margin-bottom:20px; }
+
+    .lang.cn { display:none; }
+
+    .whatsapp {
+      position:fixed; bottom:20px; right:20px;
+      background:#25d366; color:#fff; padding:15px;
+      border-radius:50%; text-decoration:none; font-size:20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>JUSTIN IT SOLUTION</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="index.html#contact">Contact</a>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('cn')">中文</button>
+  </nav>
+</header>
+
+<section class="section">
+  <h2 class="lang en">About Us</h2>
+  <h2 class="lang cn">关于我们</h2>
+
+  <p class="lang en">
+    JUSTIN IT SOLUTION provides one-stop IT solutions including computer hardware, repair services, networking, and corporate IT support. 
+    We are committed to delivering reliable and efficient IT solutions for both individuals and businesses.
+  </p>
+  <p class="lang cn">
+    JUSTIN IT SOLUTION 提供电脑硬件、维修服务、网络与企业 IT 支持的一站式解决方案。 
+    我们致力于为个人和企业客户提供可靠、高效的 IT 服务。
+  </p>
+
+  <p class="lang en">
+    Our team of experienced professionals ensures that your IT infrastructure runs smoothly, allowing you to focus on your business without technical worries.
+  </p>
+  <p class="lang cn">
+    我们经验丰富的专业团队确保您的 IT 基础设施顺畅运行，让您专注于业务，无需担心技术问题。
+  </p>
+
+  <p class="lang en">
+    We prioritize quality, customer satisfaction, and fast response times, making us a trusted IT partner for home users and companies alike.
+  </p>
+  <p class="lang cn">
+    我们以质量、客户满意度和快速响应为优先，使我们成为家庭用户和企业值得信赖的 IT 合作伙伴。
+  </p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/60122935434" target="_blank">💬</a>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+}
+</script>
+
+</body>
+</html>

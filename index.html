@@ -2,43 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>JUSTIN IT SOLUTION</title>
+  <title>Home - JUSTIN IT SOLUTION</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; color:#222; }
-    header { background:#0b1c2d; color:#fff; padding:20px; display:flex; justify-content:space-between; align-items:center; }
-    header h1 { margin:0; font-size:20px; }
-    nav a { color:#fff; margin-left:15px; text-decoration:none; font-size:14px; }
-    .lang-btn { border:1px solid #fff; background:transparent; color:#fff; margin-left:10px; cursor:pointer; }
-
-    .hero { padding:80px 20px; text-align:center; background:#f4f6f8; }
-    .hero h2 { font-size:32px; margin-bottom:10px; }
-    .hero p { font-size:16px; color:#555; }
-    .btn { display:inline-block; margin-top:20px; padding:12px 25px; background:#e63946; color:#fff; text-decoration:none; border-radius:4px; }
-
-    .section { padding:60px 20px; max-width:1100px; margin:auto; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
-    .card { border:1px solid #ddd; padding:20px; border-radius:6px; text-align:center; }
-
-    footer { background:#0b1c2d; color:#fff; padding:30px 20px; text-align:center; }
-
-    .lang.cn { display:none; }
-
-    .whatsapp {
-      position:fixed; bottom:20px; right:20px;
-      background:#25d366; color:#fff; padding:15px;
-      border-radius:50%; text-decoration:none; font-size:20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>JUSTIN IT SOLUTION</h1>
   <nav>
-    <a href="#services">Services</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
     <button class="lang-btn" onclick="setLang('en')">EN</button>
     <button class="lang-btn" onclick="setLang('cn')">中文</button>
   </nav>
@@ -55,8 +32,8 @@
 </section>
 
 <section id="services" class="section">
-  <h2 class="lang en">Our Services</h2>
-  <h2 class="lang cn">我们的服务</h2>
+  <h2 class="section-title lang en">Our Services</h2>
+  <h2 class="section-title lang cn">我们的服务</h2>
 
   <div class="grid">
     <div class="card">
@@ -80,24 +57,6 @@
       <p class="lang cn">企业级 IT 支持服务。</p>
     </div>
   </div>
-</section>
-
-<section id="products" class="section">
-  <h2 class="lang en">Popular Products</h2>
-  <h2 class="lang cn">热门产品</h2>
-
-  <div class="grid">
-    <div class="card">Desktop PC<br><a class="btn" href="https://wa.me/60122935434">Enquiry</a></div>
-    <div class="card">Laptop<br><a class="btn" href="https://wa.me/60122935434">Enquiry</a></div>
-    <div class="card">Networking Devices<br><a class="btn" href="https://wa.me/60122935434">Enquiry</a></div>
-    <div class="card">Accessories<br><a class="btn" href="https://wa.me/60122935434">Enquiry</a></div>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <p>Email: rongcong1231@gmail.com</p>
-  <p>WhatsApp: +60 12 293 5434</p>
 </section>
 
 <footer>

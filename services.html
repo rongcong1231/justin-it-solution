@@ -4,26 +4,7 @@
   <meta charset="UTF-8" />
   <title>Services - JUSTIN IT SOLUTION</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; color:#222; }
-    header { background:#0b1c2d; color:#fff; padding:20px; display:flex; justify-content:space-between; align-items:center; }
-    header h1 { margin:0; font-size:20px; }
-    nav a { color:#fff; margin-left:15px; text-decoration:none; font-size:14px; }
-    .lang-btn { border:1px solid #fff; background:transparent; color:#fff; margin-left:10px; cursor:pointer; }
-
-    .section { padding:60px 20px; max-width:1100px; margin:auto; }
-    .card { border:1px solid #ddd; padding:20px; border-radius:6px; margin-bottom:20px; }
-    .card h3 { margin-top:0; }
-    .btn { display:inline-block; margin-top:10px; padding:10px 20px; background:#e63946; color:#fff; text-decoration:none; border-radius:4px; }
-
-    .lang.cn { display:none; }
-
-    .whatsapp {
-      position:fixed; bottom:20px; right:20px;
-      background:#25d366; color:#fff; padding:15px;
-      border-radius:50%; text-decoration:none; font-size:20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -32,53 +13,49 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
-    <a href="index.html#products">Products</a>
-    <a href="index.html#contact">Contact</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
     <button class="lang-btn" onclick="setLang('en')">EN</button>
     <button class="lang-btn" onclick="setLang('cn')">中文</button>
   </nav>
 </header>
 
 <section class="section">
-  <h2 class="lang en">Our Services</h2>
-  <h2 class="lang cn">我们的服务</h2>
+  <h2 class="section-title lang en">Our Services</h2>
+  <h2 class="section-title lang cn">我们的服务</h2>
 
-  <div class="card">
-    <h3>Computer & Laptop Sales</h3>
-    <p class="lang en">Providing reliable business and home computer solutions.</p>
-    <p class="lang cn">提供可靠的商用与家用电脑解决方案。</p>
-    <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
+  <div class="grid">
+    <div class="card">
+      <h3>Computer & Laptop Sales</h3>
+      <p class="lang en">Reliable business & home computer sales.</p>
+      <p class="lang cn">可靠的商用与家用电脑销售。</p>
+      <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
+    </div>
+    <div class="card">
+      <h3>Repair & Upgrade</h3>
+      <p class="lang en">Fast & dependable repair services.</p>
+      <p class="lang cn">快速可靠的维修与升级服务。</p>
+      <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
+    </div>
+    <div class="card">
+      <h3>Network & CCTV Installation</h3>
+      <p class="lang en">Complete networking & CCTV solutions.</p>
+      <p class="lang cn">完整的网络与 CCTV 解决方案。</p>
+      <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
+    </div>
+    <div class="card">
+      <h3>Corporate IT Support</h3>
+      <p class="lang en">Professional IT support tailored for businesses.</p>
+      <p class="lang cn">为企业量身定制的专业 IT 支持。</p>
+      <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
+    </div>
   </div>
-
-  <div class="card">
-    <h3>Repair & Upgrade</h3>
-    <p class="lang en">Fast and dependable repair and upgrade services.</p>
-    <p class="lang cn">快速可靠的维修与升级服务。</p>
-    <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
-  </div>
-
-  <div class="card">
-    <h3>Network & CCTV Installation</h3>
-    <p class="lang en">Complete network and security solutions for businesses.</p>
-    <p class="lang cn">为企业提供完整的网络与安防解决方案。</p>
-    <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
-  </div>
-
-  <div class="card">
-    <h3>Corporate IT Support</h3>
-    <p class="lang en">Professional IT support services tailored for companies.</p>
-    <p class="lang cn">为企业量身定制的专业 IT 支持服务。</p>
-    <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
-  </div>
-
-  <div class="card">
-    <h3>System Setup & Data Services</h3>
-    <p class="lang en">Installation, configuration, and data management services.</p>
-    <p class="lang cn">系统安装、配置及数据管理服务。</p>
-    <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
-  </div>
-
 </section>
+
+<footer>
+  © 2026 JUSTIN IT SOLUTION
+</footer>
 
 <a class="whatsapp" href="https://wa.me/60122935434" target="_blank">💬</a>
 

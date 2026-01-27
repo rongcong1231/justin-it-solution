@@ -4,27 +4,7 @@
   <meta charset="UTF-8" />
   <title>Contact Us - JUSTIN IT SOLUTION</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; color:#222; }
-    header { background:#0b1c2d; color:#fff; padding:20px; display:flex; justify-content:space-between; align-items:center; }
-    header h1 { margin:0; font-size:20px; }
-    nav a { color:#fff; margin-left:15px; text-decoration:none; font-size:14px; }
-    .lang-btn { border:1px solid #fff; background:transparent; color:#fff; margin-left:10px; cursor:pointer; }
-
-    .section { padding:60px 20px; max-width:700px; margin:auto; line-height:1.6; }
-    h2 { margin-bottom:20px; }
-
-    .lang.cn { display:none; }
-
-    .contact-item { margin-bottom:20px; }
-    .btn { display:inline-block; margin-top:10px; padding:10px 20px; background:#e63946; color:#fff; text-decoration:none; border-radius:4px; }
-
-    .whatsapp {
-      position:fixed; bottom:20px; right:20px;
-      background:#25d366; color:#fff; padding:15px;
-      border-radius:50%; text-decoration:none; font-size:20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -34,6 +14,7 @@
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="products.html">Products</a>
+    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
     <button class="lang-btn" onclick="setLang('en')">EN</button>
     <button class="lang-btn" onclick="setLang('cn')">中文</button>
@@ -41,8 +22,8 @@
 </header>
 
 <section class="section">
-  <h2 class="lang en">Contact Us</h2>
-  <h2 class="lang cn">联系我们</h2>
+  <h2 class="section-title lang en">Contact Us</h2>
+  <h2 class="section-title lang cn">联系我们</h2>
 
   <div class="contact-item">
     <strong class="lang en">Email:</strong>
@@ -62,9 +43,13 @@
     <span>Penang, Malaysia</span>
   </div>
 
-  <a class="btn" href="https://wa.me/60122935434" target="_blank" class="lang en">Send WhatsApp Message</a>
-  <a class="btn" href="https://wa.me/60122935434" target="_blank" class="lang cn">发送 WhatsApp 信息</a>
+  <a class="btn lang en" href="https://wa.me/60122935434" target="_blank">Send WhatsApp Message</a>
+  <a class="btn lang cn" href="https://wa.me/60122935434" target="_blank">发送 WhatsApp 信息</a>
 </section>
+
+<footer>
+  © 2026 JUSTIN IT SOLUTION
+</footer>
 
 <a class="whatsapp" href="https://wa.me/60122935434" target="_blank">💬</a>
 

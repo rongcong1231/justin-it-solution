@@ -1,168 +1,149 @@
-/* ==== 全站统一 CSS ==== */
-
+/* ===== 全站通用 CSS ===== */
 body {
-  margin:0;
+  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color:#222;
-  line-height:1.6;
-  background:#f9f9f9;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
 }
-
-/* ===== Header ===== */
 header {
-  background:#0b1c2d;
-  color:#fff;
-  padding:15px 30px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:1000;
+  background: #0b1c2d;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header h1 {
-  margin:0;
-  font-size:22px;
-  font-weight:bold;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
 }
 nav a {
-  color:#fff;
-  margin-left:20px;
-  text-decoration:none;
-  font-weight:500;
-  transition:0.3s;
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 nav a:hover {
-  color:#e63946;
+  color: #e63946;
 }
 .lang-btn {
-  border:1px solid #fff;
-  background:transparent;
-  color:#fff;
-  margin-left:10px;
-  cursor:pointer;
-  padding:5px 10px;
-  border-radius:4px;
-  font-size:13px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
 }
-
-/* ===== Hero ===== */
 .hero {
-  padding:100px 20px;
-  text-align:center;
-  background:linear-gradient(135deg, #0b1c2d, #1b3a57);
-  color:#fff;
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0b1c2d, #1b3a57);
+  color: #fff;
 }
 .hero h2 {
-  font-size:36px;
-  margin-bottom:15px;
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 .hero p {
-  font-size:18px;
-  color:#ddd;
+  font-size: 18px;
+  color: #ddd;
 }
 .hero .btn {
-  display:inline-block;
-  margin-top:25px;
-  padding:14px 28px;
-  background:#e63946;
-  color:#fff;
-  text-decoration:none;
-  border-radius:6px;
-  font-weight:bold;
-  transition:0.3s;
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #e63946;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
 }
 .hero .btn:hover {
-  background:#d62828;
+  background: #d62828;
 }
-
-/* ===== Section ===== */
 .section {
-  padding:60px 20px;
-  max-width:1100px;
-  margin:auto;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 h2.section-title {
-  text-align:center;
-  font-size:28px;
-  margin-bottom:40px;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
 }
-
-/* ===== Card Grid ===== */
 .grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
 }
 .card {
-  background:#fff;
-  border-radius:8px;
-  padding:20px;
-  text-align:center;
-  box-shadow:0 4px 12px rgba(0,0,0,0.08);
-  transition:0.3s;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
 }
 .card:hover {
-  transform:translateY(-5px);
-  box-shadow:0 8px 20px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 .card h3 {
-  margin-top:0;
+  margin-top: 0;
 }
 .card p {
-  color:#555;
-  font-size:15px;
-  min-height:45px;
+  color: #555;
+  font-size: 15px;
+  min-height: 45px;
 }
 .card .btn {
-  margin-top:15px;
-  padding:10px 20px;
-  background:#e63946;
-  color:#fff;
-  text-decoration:none;
-  border-radius:4px;
-  font-weight:bold;
-  transition:0.3s;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #e63946;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
 }
 .card .btn:hover {
-  background:#d62828;
+  background: #d62828;
 }
-
-/* ===== Footer ===== */
 footer {
-  background:#0b1c2d;
-  color:#fff;
-  padding:30px 20px;
-  text-align:center;
-  margin-top:40px;
+  background: #0b1c2d;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 40px;
 }
-
-/* ===== WhatsApp Floating ===== */
 .whatsapp {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25d366;
-  color:#fff;
-  padding:18px;
-  border-radius:50%;
-  text-decoration:none;
-  font-size:22px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.2);
-  transition:0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  padding: 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 22px;
 }
 .whatsapp:hover {
-  background:#1ebe57;
+  background: #1ebe57;
 }
-
-/* ===== Language ===== */
-.lang.cn { display:none; }
-
-/* ===== Responsive ===== */
-@media (max-width:768px) {
-  header { flex-direction:column; align-items:flex-start; }
-  nav { margin-top:10px; }
-  .hero h2 { font-size:28px; }
-  .hero p { font-size:16px; }
-  .grid { gap:15px; }
+.lang.cn {
+  display: none;
+}
+@media (max-width: 768px) {
+  header {flex-direction: column; align-items: flex-start;}
+  nav { margin-top: 10px; }
+  .hero h2 { font-size: 28px; }
+  .hero p { font-size: 16px; }
+  .grid { gap: 15px; }
 }

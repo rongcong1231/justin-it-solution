@@ -5,53 +5,29 @@
   <title>JUSTIN IT SOLUTION</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-    header {
-      background: #020617;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-      color: #38bdf8;
-    }
-    header p {
-      font-size: 18px;
-      color: #cbd5f5;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #38bdf8;
-      border-bottom: 1px solid #334155;
-      padding-bottom: 10px;
-    }
-    .services div {
-      margin-bottom: 20px;
-      background: #020617;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    footer {
-      background: #020617;
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-      color: #94a3b8;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
+    body { margin:0; font-family: Arial, sans-serif; color:#222; }
+    header { background:#0b1c2d; color:#fff; padding:20px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; font-size:20px; }
+    nav a { color:#fff; margin-left:15px; text-decoration:none; font-size:14px; }
+    .lang-btn { border:1px solid #fff; background:transparent; color:#fff; margin-left:10px; cursor:pointer; }
+
+    .hero { padding:80px 20px; text-align:center; background:#f4f6f8; }
+    .hero h2 { font-size:32px; margin-bottom:10px; }
+    .hero p { font-size:16px; color:#555; }
+    .btn { display:inline-block; margin-top:20px; padding:12px 25px; background:#e63946; color:#fff; text-decoration:none; border-radius:4px; }
+
+    .section { padding:60px 20px; max-width:1100px; margin:auto; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+    .card { border:1px solid #ddd; padding:20px; border-radius:6px; text-align:center; }
+
+    footer { background:#0b1c2d; color:#fff; padding:30px 20px; text-align:center; }
+
+    .lang.cn { display:none; }
+
+    .whatsapp {
+      position:fixed; bottom:20px; right:20px;
+      background:#25d366; color:#fff; padding:15px;
+      border-radius:50%; text-decoration:none; font-size:20px;
     }
   </style>
 </head>
@@ -59,53 +35,83 @@
 
 <header>
   <h1>JUSTIN IT SOLUTION</h1>
-  <p>Reliable IT Solutions for Your Business</p>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('cn')">中文</button>
+  </nav>
 </header>
 
-<section>
-  <h2>About Us</h2>
-  <p>
-    JUSTIN IT SOLUTION is an IT service provider based in Pulau Pinang.
-    We focus on delivering reliable, practical, and professional IT solutions
-    for individuals and small to medium businesses.
-  </p>
+<section class="hero">
+  <h2 class="lang en">Reliable IT Solutions for Business & Home</h2>
+  <h2 class="lang cn">一站式电脑与企业 IT 解决方案</h2>
+
+  <p class="lang en">Sales · Repair · Networking · IT Support</p>
+  <p class="lang cn">销售 · 维修 · 网络 · IT 支持</p>
+
+  <a class="btn" href="https://wa.me/60123456789" target="_blank">WhatsApp Us</a>
 </section>
 
-<section class="services">
-  <h2>Our Services</h2>
+<section id="services" class="section">
+  <h2 class="lang en">Our Services</h2>
+  <h2 class="lang cn">我们的服务</h2>
 
-  <div>
-    <h3>IT Support & Maintenance</h3>
-    <p>Computer and laptop repair, system installation, troubleshooting and ongoing support.</p>
-  </div>
-
-  <div>
-    <h3>Network & System Solutions</h3>
-    <p>Office network setup, WiFi optimization, data backup and basic security planning.</p>
-  </div>
-
-  <div>
-    <h3>Business IT Services</h3>
-    <p>IT consultation, maintenance contracts and solutions to improve system stability.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Computer & Laptop Sales</h3>
+      <p class="lang en">Business & home computer solutions.</p>
+      <p class="lang cn">商用与家用电脑解决方案。</p>
+    </div>
+    <div class="card">
+      <h3>Repair & Upgrade</h3>
+      <p class="lang en">Fast and reliable repair service.</p>
+      <p class="lang cn">快速可靠的维修服务。</p>
+    </div>
+    <div class="card">
+      <h3>Network & CCTV</h3>
+      <p class="lang en">Network setup and security solutions.</p>
+      <p class="lang cn">网络与安防解决方案。</p>
+    </div>
+    <div class="card">
+      <h3>Corporate IT Support</h3>
+      <p class="lang en">Professional IT support for businesses.</p>
+      <p class="lang cn">企业级 IT 支持服务。</p>
+    </div>
   </div>
 </section>
 
-<section>
+<section id="products" class="section">
+  <h2 class="lang en">Popular Products</h2>
+  <h2 class="lang cn">热门产品</h2>
+
+  <div class="grid">
+    <div class="card">Desktop PC<br><a class="btn" href="https://wa.me/60123456789">Enquiry</a></div>
+    <div class="card">Laptop<br><a class="btn" href="https://wa.me/60123456789">Enquiry</a></div>
+    <div class="card">Networking Devices<br><a class="btn" href="https://wa.me/60123456789">Enquiry</a></div>
+    <div class="card">Accessories<br><a class="btn" href="https://wa.me/60123456789">Enquiry</a></div>
+  </div>
+</section>
+
+<section id="contact" class="section">
   <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:rongcong1231@gmail.com">rongcong1231@gmail.com</a></p>
-  <p>WhatsApp: <a href="https://wa.me/60122935434">012-293 5434</a></p>
-  <p>
-    Address:<br>
-    10, Lorong Belimbing 6,<br>
-    Taman Belimbing,<br>
-    14000 Bukit Mertajam,<br>
-    Pulau Pinang.
-  </p>
+  <p>Email: info@justinitsolution.com</p>
+  <p>WhatsApp: +60 12-345 6789</p>
 </section>
 
 <footer>
-  © 2026 JUSTIN IT SOLUTION. All rights reserved.
+  © 2026 JUSTIN IT SOLUTION. All Rights Reserved.
 </footer>
+
+<a class="whatsapp" href="https://wa.me/60123456789" target="_blank">💬</a>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+}
+</script>
 
 </body>
 </html>

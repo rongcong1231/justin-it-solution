@@ -56,3 +56,16 @@
   transform: translateY(-3px);
   transition: 0.25s ease;
 }
+
+.site-header {
+  padding: 20px 8%;
+  background: #0B0F14;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 48px;        /* 高端网站常用高度 */
+  width: auto;
+}
+

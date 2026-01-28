@@ -1,71 +1,23 @@
-.card {
-  background: linear-gradient(135deg, #0F1623, #121826);
-  border-radius: 14px;
-  padding: 30px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(255,255,255,0.06);
-}
-
-.card h3 {
-  color: #00E5FF;
-  margin-bottom: 10px;
-}
-
-.card p,
-.card li {
-  color: #E5E7EB;
-  font-size: 15px;
-}
-
-/* ===== Services Section ===== */
-.services {
-  padding: 60px 8%;
-  background: #0B0F14;
-}
-
-.services h2 {
-  color: #E5E7EB;
-  margin-bottom: 30px;
-}
-
-/* ===== Card ===== */
-.card {
-  background: linear-gradient(135deg, #0F1623, #121826);
-  border-radius: 14px;
-  padding: 28px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(255,255,255,0.06);
-}
-
-/* ===== Text Fix (最重要) ===== */
-.card h3 {
-  color: #00E5FF;
-  margin-bottom: 8px;
-}
-
-.card p,
-.card li {
-  color: #E5E7EB;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-/* Optional hover (高级感) */
-.card:hover {
-  border-color: rgba(0,229,255,0.4);
-  transform: translateY(-3px);
-  transition: 0.25s ease;
-}
-
 .site-header {
-  padding: 20px 8%;
-  background: #0B0F14;
+  background: linear-gradient(180deg, #0B0F14, #0F1623);
+  padding: 26px 8%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  height: 48px;        /* 高端网站常用高度 */
-  width: auto;
+  height: 44px;
+  filter: drop-shadow(0 0 6px rgba(0,229,255,0.25));
 }
 
+.nav a {
+  color: #CBD5E1;
+  margin-left: 26px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  color: #00E5FF;
+}

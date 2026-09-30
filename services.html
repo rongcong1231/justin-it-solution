@@ -1,70 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Services - JUSTIN IT SOLUTION</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Services | JUSTIN IT SOLUTION</title><link rel="stylesheet" href="style.css"></head>
 <body>
-
-<header>
-  <h1>JUSTIN IT SOLUTION</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="products.html">Products</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <button class="lang-btn" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('cn')">中文</button>
-  </nav>
-</header>
-
-<section class="section">
-  <h2 class="section-title lang en">Our Services</h2>
-  <h2 class="section-title lang cn">我们的服务</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Computer & Laptop Sales</h3>
-      <p class="lang en">Reliable business & home computer sales.</p>
-      <p class="lang cn">可靠的商用与家用电脑销售。</p>
-      <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
-    </div>
-    <div class="card">
-      <h3>Repair & Upgrade</h3>
-      <p class="lang en">Fast & dependable repair services.</p>
-      <p class="lang cn">快速可靠的维修与升级服务。</p>
-      <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
-    </div>
-    <div class="card">
-      <h3>Network & CCTV Installation</h3>
-      <p class="lang en">Complete networking & CCTV solutions.</p>
-      <p class="lang cn">完整的网络与 CCTV 解决方案。</p>
-      <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
-    </div>
-    <div class="card">
-      <h3>Corporate IT Support</h3>
-      <p class="lang en">Professional IT support tailored for businesses.</p>
-      <p class="lang cn">为企业量身定制的专业 IT 支持。</p>
-      <a class="btn" href="https://wa.me/60122935434">Enquiry</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © 2026 JUSTIN IT SOLUTION
-</footer>
-
-<a class="whatsapp" href="https://wa.me/60122935434" target="_blank">💬</a>
-
-<script>
-function setLang(lang) {
-  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-  document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
-}
-</script>
-
-</body>
-</html>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">J</span><span><b>JUSTIN</b> IT SOLUTION<small>Professional IT Solutions</small></span></a><button class="menu-toggle">☰</button><nav class="main-nav"><a href="index.html">Home</a><a class="active" href="services.html">Services</a><a href="products.html">Products</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a><div class="lang-switch"><button class="lang-btn active" data-lang="en">EN</button><button class="lang-btn" data-lang="cn">中文</button></div></nav></div></header>
+<main><section class="page-hero"><div class="container"><span class="eyebrow">OUR SERVICES</span><h1 data-en="Technology Services That Work For You" data-cn="为您提供实用可靠的科技服务">Technology Services That Work For You</h1><p data-en="From hardware and networking to security and on-site support." data-cn="从电脑硬件、网络到监控安防及上门技术支持。">From hardware and networking to security and on-site support.</p></div></section>
+<section class="section"><div class="container detail-grid">
+<article class="detail-card"><div class="number">01</div><h2>Computer / Notebook Sales & Service</h2><p data-en="Computer sales, troubleshooting, repair, upgrade, Windows setup and business/home IT assistance." data-cn="电脑销售、故障排查、维修、升级、Windows 设置及商用/家用 IT 支持。">Computer sales, troubleshooting, repair, upgrade, Windows setup and business/home IT assistance.</p><ul><li>Desktop & Notebook</li><li>Hardware Upgrade</li><li>Windows & Software Setup</li><li>Fault Diagnosis</li></ul></article>
+<article class="detail-card"><div class="number">02</div><h2>Peripherals & Accessories</h2><p data-en="Monitors, keyboards, mouse, RAM, SSD, storage, cables and everyday IT accessories." data-cn="显示器、键盘、鼠标、内存、SSD、储存设备、线材及 IT 配件。">Monitors, keyboards, mouse, RAM, SSD, storage, cables and everyday IT accessories.</p><ul><li>RAM / SSD</li><li>Monitor & Accessories</li><li>Storage Devices</li><li>PC Components</li></ul></article>
+<article class="detail-card"><div class="number">03</div><h2>Networking Solutions</h2><p data-en="Network planning, router and switch setup, Wi-Fi improvement and practical network troubleshooting." data-cn="网络规划、路由器与交换机设置、Wi-Fi 优化及网络故障处理。">Network planning, router and switch setup, Wi-Fi improvement and practical network troubleshooting.</p><ul><li>Router / Switch</li><li>Wi-Fi Setup</li><li>LAN Infrastructure</li><li>Network Consultation</li></ul></article>
+<article class="detail-card"><div class="number">04</div><h2>Digital CCTV / DVR Surveillance</h2><p data-en="CCTV system supply, installation, configuration, troubleshooting and remote viewing setup." data-cn="CCTV 系统供应、安装、设置、故障处理及手机远程观看设置。">CCTV system supply, installation, configuration, troubleshooting and remote viewing setup.</p><ul><li>Camera & NVR / DVR</li><li>Remote Viewing</li><li>System Configuration</li><li>Maintenance</li></ul></article>
+<article class="detail-card"><div class="number">05</div><h2>Printer Service</h2><p data-en="Printer support covering ink, ribbon, toner, CISS and general maintenance." data-cn="提供墨水、色带、碳粉、连续供墨及打印机日常维修维护。">Printer support covering ink, ribbon, toner, CISS and general maintenance.</p><ul><li>Ink / Toner</li><li>CISS</li><li>Printer Troubleshooting</li><li>Maintenance</li></ul></article>
+<article class="detail-card"><div class="number">06</div><h2>Industrial PC / Automation</h2><p data-en="Hardware support for industrial environments, inspection and practical IT assistance." data-cn="为工业环境提供工业电脑、硬件检查及实际 IT 技术支持。">Hardware support for industrial environments, inspection and practical IT assistance.</p><ul><li>Industrial PC</li><li>Hardware Inspection</li><li>Site Support</li><li>IT Consultation</li></ul></article>
+<article class="detail-card"><div class="number">07</div><h2>On-Site IT Services</h2><p data-en="On-site troubleshooting and installation for homes, offices, shops and factory environments." data-cn="为家庭、办公室、店铺及工厂提供上门安装与故障处理。">On-site troubleshooting and installation for homes, offices, shops and factory environments.</p><ul><li>On-Site Troubleshooting</li><li>Installation</li><li>Maintenance</li><li>Business Support</li></ul></article>
+<article class="detail-card"><div class="number">08</div><h2>Data Recovery Services</h2><p data-en="Initial assessment and recovery assistance for accessible storage devices and common data-loss situations." data-cn="针对常见资料遗失情况及可读取储存设备提供初步检测与资料恢复协助。">Initial assessment and recovery assistance for accessible storage devices and common data-loss situations.</p><ul><li>HDD / SSD Assessment</li><li>Data Backup</li><li>Recovery Consultation</li><li>Device Diagnosis</li></ul></article>
+<article class="detail-card"><div class="number">09</div><h2>Refurbished Laptop & Desktop</h2><p data-en="Practical refurbished computer options for users who need value-focused equipment." data-cn="为注重预算与实用性的用户提供翻新笔记本及台式电脑选择。">Practical refurbished computer options for users who need value-focused equipment.</p><ul><li>Refurbished Laptop</li><li>Refurbished Desktop</li><li>Testing</li><li>Upgrade Options</li></ul></article>
+</div></div></section>
+<section class="cta"><div class="container cta-inner"><div><span class="eyebrow">TELL US WHAT YOU NEED</span><h2 data-en="Need a quotation for a project?" data-cn="需要项目报价吗？">Need a quotation for a project?</h2></div><a class="btn btn-gold" href="contact.html">Get Quote →</a></div></section></main>
+<footer class="site-footer"><div class="container footer-bottom">© 2026 JUSTIN IT SOLUTION · 012 293 5434 · rongcong1231@gmail.com</div></footer><a class="floating-wa" href="https://wa.me/60122935434" target="_blank">◔</a><script src="script.js"></script></body></html>

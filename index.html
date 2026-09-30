@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Home - JUSTIN IT SOLUTION</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="JUSTIN IT SOLUTION - Professional PC hardware, assembly, CCTV, networking, printer and IT support services in Bukit Mertajam, Penang.">
+<title>JUSTIN IT SOLUTION | Professional IT Solutions</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  <h1>JUSTIN IT SOLUTION</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="products.html">Products</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <button class="lang-btn" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('cn')">中文</button>
-  </nav>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">J</span><span><b>JUSTIN</b> IT SOLUTION<small>Professional IT Solutions</small></span></a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a class="active" href="index.html" data-en="Home" data-cn="首页">Home</a>
+      <a href="services.html" data-en="Services" data-cn="服务">Services</a>
+      <a href="products.html" data-en="Products" data-cn="产品">Products</a>
+      <a href="projects.html" data-en="Projects" data-cn="案例">Projects</a>
+      <a href="about.html" data-en="About" data-cn="关于我们">About</a>
+      <a href="contact.html" data-en="Contact" data-cn="联系我们">Contact</a>
+      <div class="lang-switch"><button class="lang-btn active" data-lang="en">EN</button><button class="lang-btn" data-lang="cn">中文</button></div>
+    </nav>
+  </div>
 </header>
 
+<main>
 <section class="hero">
-  <h2 class="lang en">Reliable IT Solutions for Business & Home</h2>
-  <h2 class="lang cn">一站式电脑与企业 IT 解决方案</h2>
-
-  <p class="lang en">Sales · Repair · Networking · IT Support</p>
-  <p class="lang cn">销售 · 维修 · 网络 · IT 支持</p>
-
-  <a class="btn" href="https://wa.me/60122935434" target="_blank">WhatsApp Us</a>
-</section>
-
-<section id="services" class="section">
-  <h2 class="section-title lang en">Our Services</h2>
-  <h2 class="section-title lang cn">我们的服务</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Computer & Laptop Sales</h3>
-      <p class="lang en">Business & home computer solutions.</p>
-      <p class="lang cn">商用与家用电脑解决方案。</p>
+  <div class="hero-grid"></div>
+  <div class="container hero-content reveal">
+    <span class="eyebrow" data-en="IT HARDWARE • NETWORKING • SECURITY" data-cn="电脑硬件 • 网络 • 安防">IT HARDWARE • NETWORKING • SECURITY</span>
+    <h1 data-en="Professional IT Solutions<br><em>For Business & Home</em>" data-cn="专业 IT 解决方案<br><em>企业与家庭一站式服务</em>">Professional IT Solutions<br><em>For Business & Home</em></h1>
+    <p data-en="Professional PC Hardware Wholesale & Assembly, CCTV, Networking, Printer Service and On-Site IT Support." data-cn="专业电脑硬件批发与组装，并提供 CCTV、网络、打印机及上门 IT 支持服务。">Professional PC Hardware Wholesale & Assembly, CCTV, Networking, Printer Service and On-Site IT Support.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="contact.html" data-en="Get a Free Quote" data-cn="免费询价">Get a Free Quote</a>
+      <a class="btn btn-outline" href="https://wa.me/60122935434" target="_blank">WhatsApp</a>
     </div>
-    <div class="card">
-      <h3>Repair & Upgrade</h3>
-      <p class="lang en">Fast and reliable repair service.</p>
-      <p class="lang cn">快速可靠的维修服务。</p>
-    </div>
-    <div class="card">
-      <h3>Network & CCTV</h3>
-      <p class="lang en">Network setup and security solutions.</p>
-      <p class="lang cn">网络与安防解决方案。</p>
-    </div>
-    <div class="card">
-      <h3>Corporate IT Support</h3>
-      <p class="lang en">Professional IT support for businesses.</p>
-      <p class="lang cn">企业级 IT 支持服务。</p>
-    </div>
+    <div class="hero-points"><span>✓ <span data-en="On-Site Support" data-cn="上门服务">On-Site Support</span></span><span>✓ <span data-en="Custom PC Build" data-cn="电脑组装">Custom PC Build</span></span><span>✓ <span data-en="Business IT Solutions" data-cn="企业 IT 方案">Business IT Solutions</span></span></div>
   </div>
 </section>
 
-<footer>
-  © 2026 JUSTIN IT SOLUTION. All Rights Reserved.
-</footer>
+<section class="trust-strip"><div class="container trust-grid">
+  <div><strong>PC</strong><span data-en="Sales & Assembly" data-cn="销售与组装">Sales & Assembly</span></div>
+  <div><strong>CCTV</strong><span data-en="Security Systems" data-cn="监控系统">Security Systems</span></div>
+  <div><strong>NET</strong><span data-en="Networking Solutions" data-cn="网络解决方案">Networking Solutions</span></div>
+  <div><strong>IT</strong><span data-en="On-Site Support" data-cn="上门技术支持">On-Site Support</span></div>
+</div></section>
 
-<a class="whatsapp" href="https://wa.me/60122935434" target="_blank">💬</a>
+<section class="section"><div class="container">
+  <div class="section-heading reveal"><span class="eyebrow">WHAT WE DO</span><h2 data-en="Solutions Built Around Your Needs" data-cn="根据您的需求提供完整解决方案">Solutions Built Around Your Needs</h2><p data-en="From a single computer to a complete office or factory setup, we help you choose, install and maintain the right technology." data-cn="从单台电脑到办公室或工厂整套 IT 环境，我们协助您选择、安装及维护合适的科技设备。">From a single computer to a complete office or factory setup, we help you choose, install and maintain the right technology.</p></div>
+  <div class="service-grid">
+    <article class="service-card reveal"><div class="icon">▣</div><h3>Computer & Notebook</h3><p data-en="Sales, repair, upgrade and business/home computer solutions." data-cn="电脑与笔记本销售、维修、升级及商用/家用方案。">Sales, repair, upgrade and business/home computer solutions.</p><a href="services.html">Explore →</a></article>
+    <article class="service-card reveal"><div class="icon">◉</div><h3>CCTV Surveillance</h3><p data-en="Digital CCTV / DVR / NVR systems for homes, offices and businesses." data-cn="为住宅、办公室及商业场所提供 CCTV / DVR / NVR 方案。">Digital CCTV / DVR / NVR systems for homes, offices and businesses.</p><a href="services.html">Explore →</a></article>
+    <article class="service-card reveal"><div class="icon">⌁</div><h3>Networking</h3><p data-en="Routers, switches, Wi-Fi, cabling and network consultation." data-cn="路由器、交换机、Wi-Fi、布线及网络咨询。">Routers, switches, Wi-Fi, cabling and network consultation.</p><a href="services.html">Explore →</a></article>
+    <article class="service-card reveal"><div class="icon">▤</div><h3>Printer Service</h3><p data-en="Ink, ribbon, toner, CISS and printer maintenance." data-cn="墨水、色带、碳粉、连续供墨及打印机维修。">Ink, ribbon, toner, CISS and printer maintenance.</p><a href="services.html">Explore →</a></article>
+  </div>
+</div></section>
 
-<script>
-function setLang(lang) {
-  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-  document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
-}
-</script>
+<section class="section section-dark"><div class="container split">
+  <div class="reveal"><span class="eyebrow">WHY JUSTIN IT SOLUTION</span><h2 data-en="One Partner For Your IT Needs" data-cn="一个伙伴，解决您的 IT 需求">One Partner For Your IT Needs</h2><p data-en="We combine hardware knowledge, practical installation experience and responsive support to make IT easier for homes, offices and businesses." data-cn="结合硬件知识、实际安装经验及及时技术支持，让家庭、办公室及企业的 IT 更简单。">We combine hardware knowledge, practical installation experience and responsive support to make IT easier for homes, offices and businesses.</p><a class="text-link" href="about.html" data-en="More About Us →" data-cn="了解更多 →">More About Us →</a></div>
+  <div class="feature-list reveal">
+    <div><b>01</b><span><strong>Practical Solutions</strong><small>Recommend based on actual requirements and budget.</small></span></div>
+    <div><b>02</b><span><strong>On-Site Service</strong><small>Support for home, office, shop and factory environments.</small></span></div>
+    <div><b>03</b><span><strong>After-Sales Support</strong><small>Installation, troubleshooting and maintenance assistance.</small></span></div>
+  </div>
+</div></section>
 
+<section class="section"><div class="container">
+  <div class="section-heading"><span class="eyebrow">OUR WORK</span><h2 data-en="Recent Service Categories" data-cn="服务案例分类">Recent Service Categories</h2></div>
+  <div class="project-grid">
+    <a class="project-card project-pc reveal" href="projects.html"><span>01</span><div><small>COMPUTER</small><h3>Custom PC Build</h3></div></a>
+    <a class="project-card project-cctv reveal" href="projects.html"><span>02</span><div><small>SECURITY</small><h3>CCTV Installation</h3></div></a>
+    <a class="project-card project-net reveal" href="projects.html"><span>03</span><div><small>NETWORK</small><h3>Office Networking</h3></div></a>
+  </div>
+</div></section>
+
+<section class="cta"><div class="container cta-inner"><div><span class="eyebrow">NEED IT SUPPORT?</span><h2 data-en="Let's discuss your requirement." data-cn="告诉我们您的需求。">Let's discuss your requirement.</h2></div><a class="btn btn-gold" href="contact.html" data-en="Request a Quote →" data-cn="立即询价 →">Request a Quote →</a></div></section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">J</span><span><b>JUSTIN</b> IT SOLUTION<small>Professional IT Solutions</small></span></a><p data-en="Professional PC hardware wholesale, assembly and IT support in Bukit Mertajam, Penang." data-cn="位于槟城大山脚，提供专业电脑硬件批发、组装及 IT 支持服务。">Professional PC hardware wholesale, assembly and IT support in Bukit Mertajam, Penang.</p></div><div><h4>CONTACT</h4><p>012 293 5434<br>rongcong1231@gmail.com</p></div><div><h4>LOCATION</h4><p>10, Lorong Belimbing 6,<br>Taman Belimbing, 14000 Bukit Mertajam,<br>Pulau Pinang, Malaysia</p></div></div><div class="container footer-bottom">© 2026 JUSTIN IT SOLUTION. All Rights Reserved.</div></footer>
+<a class="floating-wa" href="https://wa.me/60122935434" target="_blank" aria-label="WhatsApp">◔</a>
+<script src="script.js"></script>
 </body>
 </html>

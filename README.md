@@ -15,3 +15,6 @@ Assets:
 - script.js
 
 No backend is required. The quote form opens WhatsApp directly.
+
+
+Logo: assets/company-logo.jpg (cropped from the supplied company-logo photo). Original source is preserved as assets/company-logo-source.jpg.

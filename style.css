@@ -12,3 +12,43 @@
 @media (max-width:800px){
   .site-logo{width:132px;height:54px;}
 }
+
+/* =========================================================
+   JUSTIN IT SOLUTION — Responsive Company Logo
+   ========================================================= */
+.site-logo{
+  display:block;
+  width:164px;
+  height:64px;
+  object-fit:contain;
+  object-position:center;
+  border-radius:4px;
+  flex:0 0 auto;
+  background:rgba(7,16,27,.72);
+  box-shadow:0 0 0 1px rgba(212,170,78,.12);
+}
+
+@media (max-width: 900px){
+  .site-logo{
+    width:145px;
+    height:58px;
+  }
+}
+
+@media (max-width: 560px){
+  .site-logo{
+    width:126px;
+    height:52px;
+  }
+}
+
+/* Prevent the logo from forcing the navigation bar wider than the viewport. */
+.site-header .container,
+.navbar,
+.nav-inner{
+  min-width:0;
+}
+
+.site-logo + *{
+  min-width:0;
+}

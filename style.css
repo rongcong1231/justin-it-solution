@@ -52,3 +52,21 @@
 .site-logo + *{
   min-width:0;
 }
+
+/* Fixed company logo asset — no other site content/layout changed */
+.site-logo{
+  display:block;
+  width:164px;
+  height:64px;
+  object-fit:contain;
+  object-position:center;
+  flex:0 0 auto;
+  border:0;
+  background:transparent;
+}
+@media (max-width:900px){
+  .site-logo{width:145px;height:58px;}
+}
+@media (max-width:560px){
+  .site-logo{width:126px;height:52px;}
+}

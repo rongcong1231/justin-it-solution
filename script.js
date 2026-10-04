@@ -16,12 +16,23 @@ document.addEventListener("DOMContentLoaded",()=>{
 
   document.querySelectorAll(".filter").forEach(btn=>{
     btn.addEventListener("click",()=>{
-      document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));
+      const bar=btn.closest(".filter-bar");
+      if(!bar) return;
+      bar.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));
       btn.classList.add("active");
       const f=btn.dataset.filter;
-      document.querySelectorAll(".product-card").forEach(card=>{
-        card.style.display=(f==="all"||card.dataset.category===f)?"block":"none";
-      });
+      const productGrid=bar.parentElement.querySelector(".product-grid");
+      const detailGrid=bar.parentElement.querySelector(".detail-grid");
+      if(productGrid){
+        productGrid.querySelectorAll(".product-card").forEach(card=>{
+          card.style.display=(f==="all"||card.dataset.category===f)?"block":"none";
+        });
+      }
+      if(detailGrid){
+        detailGrid.querySelectorAll(".detail-card").forEach(card=>{
+          card.style.display=(f==="all"||card.dataset.category===f)?"block":"none";
+        });
+      }
     });
   });
 

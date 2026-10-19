@@ -267,3 +267,10 @@ body{background:#050a13;}
  .featured-product-card{grid-template-columns:1fr;}
  .featured-product-card>img{height:220px;min-height:220px;}
 }
+
+/* Gaming PC feature cards on the Services page */
+.detail-card-featured{overflow:hidden;padding-top:0;}
+.service-feature-photo{display:block;width:calc(100% + 60px);height:190px;object-fit:cover;margin:0 -30px 24px;background:#08111e;}
+.detail-card-featured .number{margin-top:0;}
+.detail-card-featured .text-link{display:inline-block;margin-top:6px;}
+@media(max-width:600px){.service-feature-photo{width:calc(100% + 44px);height:205px;margin-left:-22px;margin-right:-22px;margin-bottom:20px;}}

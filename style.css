@@ -434,3 +434,39 @@ body{background:#050a13;}
  .homepage-why h2{font-size:19px;}
  .supported-brand-list span{font-size:11px;}
 }
+
+/* Four essential IT solution pillars — black/navy/gold responsive design. */
+.four-pillar-section,.four-product-section,.essential-project-section{padding:58px 0;background:radial-gradient(ellipse at 94% 8%,rgba(29,82,146,.18),transparent 33%),linear-gradient(180deg,#07111e,#060b14);border-top:1px solid rgba(215,180,90,.2);border-bottom:1px solid rgba(215,180,90,.21)}
+.four-pillar-intro{font-size:13px;color:#abb8ca;line-height:1.85;max-width:880px;margin:0 0 22px}
+.four-pillar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.pillar-card{overflow:hidden;min-width:0;background:linear-gradient(155deg,#132033,#080f1a);border:1px solid rgba(215,180,90,.19);border-radius:10px;transition:transform .25s,border-color .25s}
+.pillar-card:hover{transform:translateY(-4px);border-color:rgba(235,195,90,.66)}
+.pillar-photo{display:block;position:relative;aspect-ratio:16/11;overflow:hidden;background:#0e1e32}
+.pillar-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.pillar-card:hover .pillar-photo img{transform:scale(1.05)}
+.pillar-photo:after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#08101c)}
+.pillar-photo>span{position:absolute;bottom:10px;left:12px;z-index:1;color:#f1d27b;font-size:9px;font-weight:900;letter-spacing:.07em}
+.pillar-card-content{padding:18px 17px 19px}
+.pillar-card-content h3{margin:0 0 10px;font-size:18px;line-height:1.27;color:#f5f6f9}
+.pillar-card-content p{font-size:12px;line-height:1.75;color:#aebbd0;min-height:98px;margin:0 0 16px}
+.pillar-cta{color:#eed081;font-size:12px;font-weight:850}
+.four-solutions-detail{background:linear-gradient(180deg,#070d17,#0b1625)}
+.solution-detail-panel{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:0;margin-bottom:22px;border:1px solid rgba(215,180,90,.23);background:linear-gradient(125deg,#101e32,#070e19);border-radius:13px;overflow:hidden;scroll-margin-top:100px}
+.solution-detail-panel:nth-of-type(2n){grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+.solution-detail-panel:nth-of-type(2n) .solution-detail-photo{order:2}
+.solution-detail-photo{position:relative;min-height:310px;overflow:hidden;background:#102136}
+.solution-detail-photo img{display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.solution-detail-photo:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(2,8,17,.7))}
+.solution-detail-photo>span{position:absolute;z-index:1;bottom:16px;left:18px;color:#f2d386;font-size:11px;font-weight:800;letter-spacing:.16em}
+.solution-detail-copy{padding:30px 33px 32px;min-width:0}
+.solution-detail-copy .eyebrow{font-size:10px;margin:0 0 10px}
+.solution-detail-copy h3{font-size:clamp(25px,3vw,33px);line-height:1.15;margin:0 0 15px;color:#f2f5fb}
+.solution-detail-copy p{font-size:13px;line-height:1.8;color:#acb9cc;margin:0 0 22px}
+.solution-feature-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px 15px}
+.solution-feature-list span{display:flex;gap:9px;font-size:12px;line-height:1.5;color:#d8e0ec}
+.solution-feature-list span:before{content:"✓";flex:none;color:#dfc16c;font-weight:900}
+.solution-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:27px}
+.solution-buttons .btn{font-size:11px;min-height:40px}
+@media(max-width:980px){.four-pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pillar-card-content p{min-height:0}.solution-detail-panel,.solution-detail-panel:nth-of-type(2n){grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
+@media(max-width:650px){.four-pillar-section,.four-product-section,.essential-project-section{padding:38px 0}.solution-detail-panel,.solution-detail-panel:nth-of-type(2n){display:block}.solution-detail-panel:nth-of-type(2n) .solution-detail-photo{order:initial}.solution-detail-photo{height:225px;min-height:225px}.solution-detail-copy{padding:24px 21px}.solution-feature-list{grid-template-columns:1fr 1fr}.solution-feature-list span{font-size:11px}}
+@media(max-width:440px){.four-pillar-grid{grid-template-columns:1fr}.pillar-photo{aspect-ratio:16/9}.pillar-card-content{padding:17px}.pillar-card-content p{font-size:12px}.solution-feature-list{grid-template-columns:1fr}.solution-buttons .btn{width:100%}}

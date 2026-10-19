@@ -39,15 +39,36 @@ document.addEventListener("DOMContentLoaded",()=>{
   const form=document.getElementById("quoteForm");
   if(form){
     const params=new URLSearchParams(location.search), item=params.get("item");
-    if(item) document.getElementById("qMessage").value=`I would like to enquire about: ${item}`;
+    if(item) {
+      const messageField=document.getElementById("qMessage");
+      messageField.value=`I would like to enquire about: ${item}\n\nMy requirements: `;
+      const choice=document.getElementById("qService");
+      const candidates=[...choice.options];
+      const normal=x=>x.toLowerCase().replace(/[^a-z0-9]/g," ");
+      const target=normal(item);
+      let match=candidates.find(o=>normal(o.value)===target);
+      if(!match) match=candidates.find(o=>target.includes(normal(o.value))||normal(o.value).includes(target));
+      if(match) choice.value=match.value;
+    }
     form.addEventListener("submit",e=>{
       e.preventDefault();
       const name=document.getElementById("qName").value.trim();
       const phone=document.getElementById("qPhone").value.trim();
       const service=document.getElementById("qService").value;
       const msg=document.getElementById("qMessage").value.trim();
-      const text=`Hi JUSTIN IT SOLUTION, I would like to request a quotation.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0ARequirement: ${encodeURIComponent(msg||"Please advise.")}`;
-      window.open(`https://wa.me/60122935434?text=${text}`,"_blank");
+      const area=document.getElementById("qArea")?.value.trim()||"Not specified";
+      const budget=document.getElementById("qBudget")?.value||"Not specified";
+      const details=[
+        "Hi JUSTIN IT SOLUTION, I would like to request a quotation.",
+        "",
+        `Name: ${name}`,
+        `Phone: ${phone}`,
+        `Service: ${service}`,
+        `Location: ${area}`,
+        `Approximate budget: ${budget}`,
+        `Requirements: ${msg||"Please advise."}`
+      ].join("\n");
+      window.open(`https://wa.me/60122935434?text=${encodeURIComponent(details)}`,"_blank","noopener,noreferrer");
     });
   }
 

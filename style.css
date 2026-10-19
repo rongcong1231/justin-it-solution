@@ -470,3 +470,38 @@ body{background:#050a13;}
 @media(max-width:980px){.four-pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pillar-card-content p{min-height:0}.solution-detail-panel,.solution-detail-panel:nth-of-type(2n){grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
 @media(max-width:650px){.four-pillar-section,.four-product-section,.essential-project-section{padding:38px 0}.solution-detail-panel,.solution-detail-panel:nth-of-type(2n){display:block}.solution-detail-panel:nth-of-type(2n) .solution-detail-photo{order:initial}.solution-detail-photo{height:225px;min-height:225px}.solution-detail-copy{padding:24px 21px}.solution-feature-list{grid-template-columns:1fr 1fr}.solution-feature-list span{font-size:11px}}
 @media(max-width:440px){.four-pillar-grid{grid-template-columns:1fr}.pillar-photo{aspect-ratio:16/9}.pillar-card-content{padding:17px}.pillar-card-content p{font-size:12px}.solution-feature-list{grid-template-columns:1fr}.solution-buttons .btn{width:100%}}
+
+/* Conversion-focused homepage sections / FAQs / quote plans */
+.conversion-plans{padding:64px 0;background:linear-gradient(165deg,#0a1423,#050a12);border-top:1px solid rgba(215,180,90,.24);border-bottom:1px solid rgba(215,180,90,.24)}
+.plan-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.plan-card{display:flex;flex-direction:column;padding:25px 23px;border-radius:12px;background:linear-gradient(140deg,#142238,#080e19);border:1px solid rgba(215,180,90,.25)}
+.plan-code{color:#e7c878;font-size:10px;font-weight:900;letter-spacing:.16em;margin-bottom:16px}
+.plan-card h3{font-size:21px;line-height:1.25;margin:0 0 12px;color:#f4f6fa}
+.plan-card p{color:#abb9cb;font-size:12px;line-height:1.8;margin:0 0 18px}
+.plan-card ul{list-style:none;margin:0 0 21px;padding:0;display:grid;gap:10px}
+.plan-card li{font-size:12px;color:#cbd5e3;line-height:1.5}
+.plan-card li:before{content:"✓";font-weight:900;color:#e3c26b;margin-right:8px}
+.plan-card .btn{align-self:flex-start;margin-top:auto;font-size:11px}
+.plan-note{font-size:11px;color:#9ba9ba;line-height:1.65;margin-top:20px}
+.trust-evidence{padding:57px 0;background:linear-gradient(145deg,#060c15,#101b2d);border-top:1px solid rgba(215,180,90,.2);border-bottom:1px solid rgba(215,180,90,.2)}
+.trust-evidence-inner{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.trust-evidence-inner h2{font-size:clamp(26px,3.2vw,38px);line-height:1.2;margin:0 0 13px}
+.trust-evidence-inner p,.testimonial-policy p{font-size:13px;line-height:1.8;color:#abb9ca}
+.trust-steps{display:grid;gap:13px}
+.trust-steps>div{display:flex;align-items:center;gap:14px;padding:14px 17px;background:#0a1523;border:1px solid rgba(215,180,90,.2);border-radius:9px}
+.trust-steps b{color:#e6c36d;font-size:21px}
+.trust-steps span{font-weight:700;font-size:12px}
+.testimonial-policy{margin-top:23px;padding-top:22px;border-top:1px solid rgba(215,180,90,.17)}
+.testimonial-policy h3{margin:0 0 6px;font-size:17px;color:#e8c775}
+.testimonial-policy p{margin:0 0 9px}
+.conversion-faq{padding:55px 0;background:#070e18;border-top:1px solid rgba(215,180,90,.2)}
+.conversion-faq-list{display:grid;grid-template-columns:1fr 1fr;column-gap:18px;row-gap:10px}
+.conversion-faq-list details{background:linear-gradient(145deg,#101b2c,#08111c);border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:14px 17px;align-self:start}
+.conversion-faq-list summary{font-weight:750;font-size:13px;line-height:1.55;cursor:pointer;color:#eef2f9}
+.conversion-faq-list details[open]{border-color:rgba(215,180,90,.45)}
+.conversion-faq-list details p{font-size:12px;line-height:1.75;color:#aebdcd;margin:12px 0 2px}
+.faq-bottom{margin-top:24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.faq-bottom span{font-size:12px;color:#b3c0cf}
+.faq-bottom .btn{font-size:11px;flex-shrink:0}
+@media(max-width:850px){.plan-grid{grid-template-columns:1fr 1fr}.trust-evidence-inner{grid-template-columns:1fr;gap:20px}.conversion-faq-list{grid-template-columns:1fr}}
+@media(max-width:600px){.plan-grid{grid-template-columns:1fr}.conversion-plans,.trust-evidence,.conversion-faq{padding:42px 0}.faq-bottom{align-items:flex-start;flex-direction:column}.plan-card .btn{width:100%}}

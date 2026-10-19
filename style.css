@@ -118,3 +118,74 @@
 .site-header .site-logo{display:block;width:110px;height:72px;object-fit:contain;object-position:center;flex:0 0 auto;background:transparent;border:0;border-radius:3px;box-shadow:none;padding:0;}
 @media(max-width:900px){.site-header .site-logo{width:100px;height:66px;}}
 @media(max-width:560px){.site-header .site-logo{width:88px;height:60px;}}
+
+
+/* Brand-first refresh: make the JiT emblem and full company name unmistakable. */
+:root{--brand-navy:#07152b;--brand-navy-2:#0b1f38;}
+body{background:#050a13;}
+.site-header{background:rgba(5,10,19,.94);border-bottom:1px solid rgba(215,180,90,.26);}
+.site-header .nav-wrap{min-height:82px;gap:18px;}
+.site-header .brand{display:flex;align-items:center;gap:11px;letter-spacing:0;flex:0 0 auto;min-width:0;}
+.site-header .site-logo{width:62px;height:58px;object-fit:contain;object-position:center;background:transparent;border:0;border-radius:4px;box-shadow:0 0 22px rgba(215,180,90,.09);padding:0;flex-shrink:0;}
+.brand-name{display:flex;flex-direction:column;gap:2px;color:#fff;font-size:13px;line-height:1.12;font-weight:900;letter-spacing:.045em;white-space:nowrap;}
+.brand-name small{display:block;color:#d7b45a;font-size:8px;line-height:1.4;font-weight:700;letter-spacing:.16em;}
+.hero-brand{isolation:isolate;min-height:690px;overflow:hidden;background:radial-gradient(ellipse at 78% 47%,rgba(215,180,90,.14),transparent 34%),radial-gradient(ellipse at 88% 15%,rgba(43,105,169,.24),transparent 40%),linear-gradient(120deg,#040914 0%,#07152b 48%,#08101e 100%);}
+.hero-brand:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,8,17,.96) 0%,rgba(5,15,31,.8) 48%,rgba(5,14,29,.25) 100%);z-index:-1;pointer-events:none;}
+.hero-brand:after{background:linear-gradient(90deg,rgba(4,9,18,.18),rgba(4,9,18,.05));pointer-events:none;}
+.hero-brand .hero-grid{opacity:.12;background-image:linear-gradient(rgba(215,180,90,.22) 1px,transparent 1px),linear-gradient(90deg,rgba(215,180,90,.22) 1px,transparent 1px);background-size:62px 62px;}
+.hero-brand .hero-content{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);align-items:center;gap:38px;padding:78px 0 86px;}
+.hero-copy{min-width:0;position:relative;z-index:3;}
+.hero-brand .eyebrow{font-size:11px;letter-spacing:.2em;color:#f0cd74;margin-bottom:22px;}
+.hero-company-name{margin:0 0 18px;max-width:760px;font-size:clamp(38px,4.8vw,69px);font-weight:950;line-height:.99;letter-spacing:-.045em;text-wrap:balance;text-shadow:0 5px 25px rgba(0,0,0,.55);}
+.hero-company-name span{display:block;color:#fff;}
+.hero-company-name em{display:block;margin-top:6px;color:#e8c56b;font-style:normal;}
+.hero-brand .hero-subtitle{font-size:clamp(19px,2vw,27px);line-height:1.25;color:#eaf0f8;margin:0 0 17px;font-weight:650;max-width:620px;}
+.hero-brand .hero-copy>p{max-width:590px;color:#b9c5d4;font-size:16px;line-height:1.8;}
+.hero-brand .hero-actions{gap:13px;margin:28px 0 26px;flex-wrap:wrap;}
+.hero-brand .btn{min-height:46px;border-radius:5px;letter-spacing:.015em;}
+.hero-brand .btn-gold{background:linear-gradient(135deg,#f3d98d,#cba64a);box-shadow:0 8px 24px rgba(215,180,90,.16);}
+.hero-brand .btn-outline{border-color:rgba(255,255,255,.26);background:rgba(255,255,255,.03);}
+.hero-brand .hero-points{gap:18px;color:#d4dce7;}
+.hero-brand-art{position:relative;z-index:2;display:flex;align-items:center;flex-direction:column;justify-content:center;min-width:0;padding:8px 0 0;}
+.hero-logo-frame{width:min(100%,410px);aspect-ratio:1/1;border:1px solid rgba(215,180,90,.28);border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle,rgba(17,42,72,.62),rgba(7,15,29,.36) 62%,rgba(7,15,29,.08));box-shadow:0 0 0 12px rgba(215,180,90,.025),0 0 70px rgba(21,70,125,.18),inset 0 0 55px rgba(215,180,90,.045);overflow:hidden;}
+.hero-logo-frame:before{content:"";position:absolute;inset:15px;border:1px solid rgba(215,180,90,.14);border-radius:50%;pointer-events:none;}
+.hero-logo-image{position:relative;z-index:1;display:block;width:90%;height:90%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;background:transparent;border:0;padding:0;margin:0;filter:drop-shadow(0 12px 24px rgba(0,0,0,.48));}
+.hero-brand-caption{display:flex;align-items:center;justify-content:center;gap:11px;color:#f1d586;font-size:12px;font-weight:900;letter-spacing:.19em;margin-top:24px;text-align:center;}
+.hero-brand-caption span{display:inline-block;width:24px;height:1px;background:linear-gradient(90deg,transparent,#d7b45a);}
+.hero-brand-caption span:last-child{transform:rotate(180deg);}
+.hero-brand-subcaption{margin-top:5px;text-align:center;color:#95a6ba;font-size:9px;letter-spacing:.22em;}
+@media(max-width:1000px){
+ .hero-brand .hero-content{grid-template-columns:minmax(0,1.05fr) minmax(260px,.8fr);gap:20px;}
+ .hero-logo-frame{width:min(100%,340px);}
+ .hero-company-name{font-size:clamp(34px,5vw,54px);}
+ .main-nav>a{padding:9px 8px;font-size:12px;}
+}
+@media(max-width:800px){
+ .site-header .nav-wrap{min-height:72px;gap:10px;}
+ .site-header .site-logo{width:51px;height:49px;}
+ .brand-name{font-size:11px;letter-spacing:.025em;}
+ .brand-name small{font-size:7px;letter-spacing:.11em;}
+ .hero-brand .hero-content{grid-template-columns:1fr;gap:30px;padding:64px 0 72px;}
+ .hero-copy{max-width:690px;}
+ .hero-company-name{font-size:clamp(39px,8vw,64px);}
+ .hero-logo-frame{width:min(82vw,340px);}
+ .hero-brand-art{padding-top:0;}
+}
+@media(max-width:560px){
+ .container{width:calc(100% - 30px);}
+ .site-header .brand{gap:8px;}
+ .site-header .site-logo{width:43px;height:43px;}
+ .brand-name{font-size:10px;letter-spacing:0;}
+ .brand-name small{font-size:6px;letter-spacing:.09em;}
+ .site-header .nav-wrap{min-height:66px;}
+ .hero-brand .hero-content{padding:51px 0 58px;gap:25px;}
+ .hero-company-name{font-size:clamp(35px,10.2vw,49px);letter-spacing:-.04em;margin-bottom:15px;}
+ .hero-brand .hero-subtitle{font-size:20px;}
+ .hero-brand .hero-copy>p{font-size:14px;line-height:1.75;}
+ .hero-brand .hero-actions{flex-direction:column;align-items:stretch;}
+ .hero-brand .hero-actions .btn{width:100%;}
+ .hero-brand .hero-points{gap:8px;}
+ .hero-logo-frame{width:min(80vw,290px);}
+ .hero-brand-caption{font-size:10px;letter-spacing:.13em;margin-top:18px;}
+ .hero-brand-subcaption{font-size:8px;letter-spacing:.12em;}
+}

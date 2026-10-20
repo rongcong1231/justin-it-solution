@@ -505,3 +505,90 @@ body{background:#050a13;}
 .faq-bottom .btn{font-size:11px;flex-shrink:0}
 @media(max-width:850px){.plan-grid{grid-template-columns:1fr 1fr}.trust-evidence-inner{grid-template-columns:1fr;gap:20px}.conversion-faq-list{grid-template-columns:1fr}}
 @media(max-width:600px){.plan-grid{grid-template-columns:1fr}.conversion-plans,.trust-evidence,.conversion-faq{padding:42px 0}.faq-bottom{align-items:flex-start;flex-direction:column}.plan-card .btn{width:100%}}
+
+
+/* Readability pass, October 2026: all screen sizes; keep black/gold brand identity. */
+:root{--muted:#afbdce;}
+body{font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+.site-header .nav-wrap{min-height:83px;}
+.site-header .brand-name{font-size:15px;letter-spacing:.025em;}
+.site-header .brand-name small{font-size:9px;}
+.site-header .main-nav>a{font-size:14px;padding:10px 10px;}
+.lang-btn{font-size:13px;}
+.section-mini-heading .eyebrow,.eyebrow,.product-kicker,.plan-code,.supported-title .eyebrow{font-size:11px;}
+.section-mini-heading h2{font-size:clamp(23px,2.7vw,31px);}
+.section-mini-heading .text-link,.text-link{font-size:13px;}
+.homepage-hero .hero-description{font-size:15px;line-height:1.75;}
+.homepage-hero .hero-subtitle{font-size:clamp(18px,2vw,25px);}
+.hero-proof-item b{font-size:12px;}
+.hero-proof-item small{font-size:11px;}
+.homepage-hero .btn,.btn,.featured-build-main-copy .btn-small,.plan-card .btn,.solution-buttons .btn{font-size:13px;}
+.service-quick-card{padding:16px 8px;min-height:146px;}
+.service-quick-card strong{font-size:12px;}
+.service-quick-card small{font-size:10px;line-height:1.5;}
+.featured-build-main-copy h3{font-size:21px;}
+.featured-build-main-copy p,.gold-check-list li{font-size:12px;}
+.featured-build-card span,.homepage-project-caption strong{font-size:13px;}
+.homepage-project-caption small,.homepage-project-caption em{font-size:10px;}
+.pillar-card-content h3{font-size:20px;}
+.pillar-card-content p,.pillar-cta{font-size:14px;}
+.customer-type-card h3,.build-card-body h3{font-size:17px;}
+.customer-type-card p,.customer-type-card>a,.build-card-body p,.build-card-link{font-size:13px;}
+.homepage-why-item,.supported-brand-list span,.trust-steps span,.conversion-faq-list summary{font-size:14px;}
+.supported-inner>p,.gallery-disclaimer,.plan-note{font-size:11px;}
+.plan-card p,.plan-card li,.conversion-faq-list details p,.solution-detail-copy p,.solution-feature-list span{font-size:14px;}
+.project-photo-overlay small,.project-photo-overlay em{font-size:11px;}
+.project-photo-overlay strong{font-size:17px;}
+.page-hero p,.section-heading p,.faq-bottom span{font-size:15px;line-height:1.8;}
+.detail-card p,.product-card p,.case-body p,.visual-card span{font-size:14px;}
+.detail-card ul,.product-card .btn,.filter,.contact-item,.quote-form label,.quote-form input,.quote-form select,.quote-form textarea{font-size:14px;}
+.contact-info a,.footer-grid p{font-size:14px;}
+.site-footer .footer-grid h4,.footer-bottom{font-size:12px;}
+/* Reusable, locally hosted WhatsApp brand icon across the site. */
+.floating-wa{background:#25D366;min-width:60px;min-height:60px;border:2px solid rgba(255,255,255,.18);box-shadow:0 10px 28px rgba(0,0,0,.38);}
+.floating-wa:hover{background:#1fb95a;transform:translateY(-2px);}
+.whatsapp-icon{display:inline-block;width:25px;height:25px;flex-shrink:0;vertical-align:middle;object-fit:contain;}
+.floating-wa .whatsapp-icon{width:34px;height:34px;}
+.btn-whatsapp{background:#25D366;color:#fff;}
+.btn-whatsapp .whatsapp-icon{width:22px;height:22px;}
+/* On-screen text remains legible without overcrowding the phone layout. */
+@media(max-width:1050px){
+ .service-quick-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+ .service-quick-card{min-height:130px;}
+ .site-header .main-nav>a{font-size:14px;}
+}
+@media(max-width:760px){
+ .site-header .nav-wrap{min-height:74px;}
+ .site-header .brand-name{font-size:13px;}
+ .site-header .brand-name small{font-size:8px;}
+ .homepage-hero .hero-description{font-size:15px;}
+ .hero-proof-item b{font-size:12px;}
+ .hero-proof-item small{font-size:10px;}
+ .section-mini-heading h2{font-size:23px;}
+ .service-quick-card strong{font-size:12px;}
+ .service-quick-card small{font-size:10px;}
+ .homepage-project-caption strong{font-size:12px;}
+ .homepage-project-caption em{font-size:10px;}
+ .main-nav>a{font-size:15px;}
+}
+@media(max-width:480px){
+ body{font-size:15px;}
+ .site-header .brand-name{font-size:11px;}
+ .site-header .brand-name small{font-size:7px;}
+ .homepage-hero .hero-company-name{font-size:clamp(29px,7.5vw,38px);}
+ .homepage-hero .hero-description{font-size:14px;}
+ .homepage-hero .hero-actions .btn{font-size:12px;min-height:45px;}
+ .hero-proof-item b{font-size:11px;}
+ .hero-proof-item small{font-size:10px;}
+ .service-quick-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+ .service-quick-card{min-height:120px;}
+ .service-quick-card strong{font-size:13px;}
+ .service-quick-card small{font-size:11px;}
+ .featured-build-main-copy p,.gold-check-list li{font-size:13px;}
+ .featured-build-card span{font-size:12px;}
+ .homepage-project-caption strong{font-size:12px;}
+ .homepage-project-caption small,.homepage-project-caption em{font-size:9px;}
+ .pillar-card-content p,.detail-card p,.product-card p{font-size:14px;}
+ .floating-wa{width:56px;height:56px;min-width:56px;min-height:56px;right:14px;bottom:14px;}
+ .floating-wa .whatsapp-icon{width:31px;height:31px;}
+}
